@@ -19,6 +19,6 @@ describe("first", () => {
   });
 
   it("expect if negative numbers are passed, it should throw an exception `negative numbers not allowed`", () => {
-    expect(add("2,-4")).toThrowError()
+    expect(() => add("2,-4")).toThrowError("negative numbers not allowed");
   })
 });
